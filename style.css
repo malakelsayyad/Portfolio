@@ -1,0 +1,325 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 10px; /* space between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items ul li a {
+  display: inline-block;
+  padding: 8px 15px; /* adjust vertical and horizontal padding */
+  border-radius: 8px;
+  color: #0f4c5c; /* default link color */
+  text-decoration: none;
+  transition: all 0.3s ease; /* smooth background & color transition */
+}
+
+.nav-items ul li a:hover {
+  background-color: rgba(37, 99, 235, 0.8);
+  color: white !important;
+}
+
+.nav-items ul li a.active {
+  background-color: rgba(37, 99, 235, 0.8);
+  color: white !important;
+}
+
+/* Navbar scroll effect */
+.navbar {
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #f0f4fa !important;
+  border-bottom: 2px solid #d1d5db;
+}
+
+
+.bg-highlight {
+  background-color: rgba(37, 99, 235, 0.15);
+  padding: 4px 4px;
+  border-radius: 4px;
+}
+
+.btn-blue {
+  background-color: rgba(37, 99, 235, 0.85);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn-blue:hover {
+  background-color: rgb(29, 78, 216);
+  color: white;
+}
+
+.abt-box {
+  text-align: center;
+  background-color: rgba(37, 99, 235, 0.1);
+  border-radius: 8px;
+}
+
+#downloadCv {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: black;
+  background: white;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+#downloadCv:hover {
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: 2px solid rgb(29, 78, 216);
+  color: rgb(29, 78, 216);
+}
+
+.social-icons {
+  bottom: -30px;
+  background-color: white;
+  color: rgba(37, 99, 235, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: rgba(37, 99, 235, 0.8);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: white;
+  background-color: rgba(29, 78, 216, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#process,
+#services {
+  background-color: #f0f4fa;
+}
+
+.process-icons {
+  font-size: 40px;
+  color: rgba(37, 99, 235, 0.8);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.process-box {
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  transition: all 0.3s ease;
+}
+.process-box:hover .process-icons {
+  color: white;
+  background-color: rgba(29, 78, 216, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+#portfolio a {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: black;
+  background: white;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+#portfolio a:hover {
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: 2px solid rgb(29, 78, 216);
+  color: rgb(29, 78, 216);
+}
+
+#portfolio .btn-animate i,
+#ideas .btn-animate i {
+  transition: transform 0.3s ease;
+}
+
+#portfolio .btn-animate:hover i,
+#ideas .btn-animate:hover i {
+  transform: translateX(6px);
+}
+.ideas {
+  min-height: 70vh; /* adjust between 60–100vh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers text vertically */
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #1d4ed8;
+  width: 15px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.services-box {
+  cursor: pointer;
+  padding: 25px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  transition: all 0.3s ease;
+}
+
+.services-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(50, 105, 224);
+  border-radius: 8px;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.services-box:hover::before {
+  width: 4px;
+}
+
+.services-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.contact-icons {
+  gap: 35px;
+  margin-left: 3rem; /* aligns with text start of other items */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(28%) sepia(100%) saturate(7476%) hue-rotate(203deg) brightness(95%) contrast(101%);
+}
+
+.contact-icons i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: rgba(37, 99, 235, 0.8);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-icons i:hover {
+  color: white;
+  background-color: rgba(29, 78, 216, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  background-color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.details i {
+  border-radius: 8px;
+  font-size: 24px;
+  color: rgba(37, 99, 235, 0.8);
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.details:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.details:hover i {
+  color: white;
+  background-color: rgba(29, 78, 216, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: none;
+  border-bottom: 2px solid #1d4ed8;
+  outline: none;
+  border-radius: 8px;
+  color: #1d4ed8;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.form-control:focus::placeholder {
+  color: #1d4ed8;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #F0F4FA;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
